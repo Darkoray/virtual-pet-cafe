@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
+
+/* 
+TODO:
+- add link effects
+- change slider color
+- add a get top of the page button
+- add an about page
+- fix header and footer
+- add icons
+
+IDEA:
+- add a background image to the main container
+*/
+
+/*
+*Links (LVHA -link, visited, hover, active)
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 1200px;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+article {
+  background-color: #ffffff;
+  width: 800px;
+}
+
+aside {
+  background-color: #ffecee;
+}
+/* 
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* h1 {
+  } */
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+section {
+  margin: 20px;
+}
+
+p {
+  font-family: "Playwrite DE Grund", serif;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+p::first-letter {
+  padding-left: 28px;
+}
+
+body {
+  font-family: "Playwrite DE Grund", serif;
+  color: #252525;
+}
+
+.brand-title {
+  font-family: "Playwrite GB S", serif;
+}
+
+.brand-slogan {
+  font-family: "Jua", serif;
+}
+
+/* TITLE: NAVIGATION MENU */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  height: 50px;
+}
+
+.header-brand-title {
+  font-size: 24px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-brand-slogan {
+  font-size: 14px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-menu {
+  background-color: #e97451;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 16px;
+}
+
+/* TITLE: NAVIGATION MENU LINKS */
+.nav-menu-link {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 550;
+  text-decoration: none;
+}
+/* TITLE: CAFE RULES */
+.list-margin-fix {
+  margin-left: 50px;
+}
+
+/* TITLE: PET ADOPTION FORM */
+.adoption-form-paragraph {
+  text-align: center;
+}
+
+.pet-adoption-form {
+  border: 3px solid #623021;
+  background: #f2d2bd;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.adoption-form-header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.form-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 12px;
+  font-weight: 600;
+  width: 40%;
+}
+
+.form-input-box {
+  font-family: "Playwrite DE Grund", serif;
+  font-size: 12px;
+  text-align: center;
+  width: 60%;
+  background: #f2d2bd;
+  border: none;
+  border: 3px solid #e97451;
+  margin-left: 5px;
+}
+
+.form-label-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-terms {
+  text-align: center;
+  margin: 5px 0;
+}
+
+/* TITLE: PET ADOPTION FORM BUTTON*/
+.form-submit-button {
+  font-family: "Playwrite DE Grund", serif;
+  height: 50px;
+  width: 100%;
+  font-weight: 700;
+  background: #e97451;
+  border: none;
+  border-top: 3px solid #623021;
+}
+
+.form-submit-button:hover {
+  background: #623021;
+  color: #ffffff;
+}
+
+/* TITLE: PETS STATS PANEL */
+table,
+th,
+td {
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #623021;
+  border-collapse: collapse;
+  background-color: #f2d2bd;
+}
+
+table {
+  width: 300px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+caption {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+th {
+  font-size: 14px;
+  font-weight: 700;
+  height: 30px;
+  background-color: #e97451;
+}
+
+.pet-imgs {
+  width: 100px;
+}
+
+.pet-stats-panel {
+  position: relative;
+}
+
+.tag-line {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #ffffff;
+  background-color: #ffa200;
+  padding: 0 10px;
+
+  position: absolute;
+  right: -15px;
+  top: 120px;
+}
+
+.tag-line::first-letter {
+  padding-left: 0;
+}
+
+/* TITLE: FOOTER */
+.footer {
+  font-weight: 600;
+  background-color: #e97451;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.footer-paragraphs {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-brand-title {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .footer-brand-slogan {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2px;
+} */
+
+.copyright {
+  font-family: sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+strong {
+  font-weight: 800;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+/* TITLE: FOOTER LINKS */
+.footer-links {
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  gap: 5px;
+}
+
+.social-media-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.social-media-icons {
+  height: 20px;
+}
+
+.instagram {
+  color: #e53763;
+}
+
+.facebook {
+  color: #2e77ae;
+}
+
+.twitter {
+  color: #00aee6;
+}
+
+.linkedin {
+  color: #2284ba;
+}
+
+.github {
+  color: #000000;
+}
