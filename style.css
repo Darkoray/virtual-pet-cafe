@@ -8,17 +8,12 @@
 TODO:
 - add link effects
 - change slider color
-- add a get top of the page button
 - add an about page
-- fix header and footer
+- improve header and footer
 - add icons
 
 IDEA:
 - add a background image to the main container
-*/
-
-/*
-*Links (LVHA -link, visited, hover, active)
 */
 
 * {
@@ -39,12 +34,12 @@ body {
 }
 
 article {
-  background-color: #ffecee;
+  background-color: #f7d0ac;
   width: 800px;
 }
 
 aside {
-  background-color: #ffecee;
+  background-color: #f7d0ac;
 }
 /* 
 aside {
@@ -145,15 +140,36 @@ body {
 }
 
 /* TITLE: NAVIGATION MENU LINKS */
-.nav-menu-link {
+/*
+*Links (LVHA -link, visited, hover, active)
+*/
+.nav-menu-link:link,
+.nav-menu-link:visited {
   color: #ffffff;
   font-size: 14px;
-  font-weight: 550;
+  font-weight: 600;
   text-decoration: none;
 }
+
+.nav-menu-link:hover,
+.nav-menu-link:active {
+  color: #623021;
+  font-weight: 600;
+}
+
 /* TITLE: CAFE RULES */
 .list-margin-fix {
   margin-left: 50px;
+}
+
+/* TITLE: FUN ANIMAL FACTS */
+blockquote {
+  margin-bottom: 10px;
+}
+
+blockquote::first-letter,
+cite {
+  padding-left: 28px;
 }
 
 /* TITLE: PET ADOPTION FORM */
@@ -284,7 +300,7 @@ th {
 .footer {
   font-weight: 600;
   background-color: #e97451;
-  height: 80px;
+  height: 40px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -314,7 +330,7 @@ th {
 
 .copyright {
   font-family: sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
 }
 
@@ -363,4 +379,11 @@ p {
 
 .github {
   color: #000000;
+}
+
+/* TITLE: GET TO TOP BUTTON */
+.arrow-up {
+  position: fixed;
+  right: 60px;
+  bottom: 50px;
 }
