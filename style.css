@@ -27,16 +27,19 @@ IDEA:
   box-sizing: border-box;
 }
 
-.main-container {
+body {
   width: 1200px;
-  display: flex;
-  flex: 1 1 auto;
-  justify-content: space-between;
   margin: 0 auto;
 }
 
+.main-container {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-between;
+}
+
 article {
-  background-color: #ffffff;
+  background-color: #ffecee;
   width: 800px;
 }
 
@@ -50,11 +53,11 @@ aside {
   align-items: center;
 } */
 
-body {
-  height: 100vh;
+/* body {
+  height: 100px;
   display: flex;
   flex-direction: column;
-}
+} */
 
 /* h1 {
   } */
