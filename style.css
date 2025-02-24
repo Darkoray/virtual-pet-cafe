@@ -6,9 +6,6 @@
 
 /* 
 TODO:
-- add link effects
-- change slider color
-- add an about page
 - improve header and footer
 - add icons
 
@@ -139,7 +136,17 @@ body {
   gap: 16px;
 }
 
+.header-nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 /* TITLE: NAVIGATION MENU LINKS */
+.nav-menu-link {
+  display: flex;
+  gap: 1px;
+}
 /*
 *Links (LVHA -link, visited, hover, active)
 */
