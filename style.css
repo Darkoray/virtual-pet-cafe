@@ -6,22 +6,30 @@
 
 /* 
 TODO:
-- improve header and footer
-- add icons
-
+- add icons to the header
+- add icons to paragraphs
 IDEA:
-- add a background image to the main container
+- none
 */
 
+/* TITLE:GLOBAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* TITLE: BACKGROUND */
 body {
   width: 1200px;
   margin: 0 auto;
+  background-image: url(img/background.png);
+  background-size: 300px;
+  background-color: #ecccb6;
 }
 
 .main-container {
@@ -31,13 +39,9 @@ body {
 }
 
 article {
-  background-color: #f7d0ac;
   width: 800px;
 }
 
-aside {
-  background-color: #f7d0ac;
-}
 /* 
 aside {
   display: flex;
@@ -51,6 +55,24 @@ aside {
   flex-direction: column;
 } */
 
+article section {
+  border-radius: 20px;
+  background-color: #ffcfc4;
+  border: 1px dotted #623021;
+  margin: 10px;
+  padding: 20px;
+}
+
+aside section {
+  border: 3px solid #623021;
+  border-radius: 20px;
+  background-color: #ffcfc4;
+  overflow: hidden;
+  margin: 20px;
+  padding-top: 10px;
+}
+
+/* TITLE: FONT EDITS & SPACING */
 /* h1 {
   } */
 
@@ -68,23 +90,19 @@ h4 {
   font-size: 16px;
 }
 
-section {
-  margin: 20px;
-}
-
 p {
   font-family: "Playwrite DE Grund", serif;
   font-size: 16px;
   margin-bottom: 5px;
 }
 
-p::first-letter {
+article section p::first-letter {
   padding-left: 28px;
 }
 
 body {
   font-family: "Playwrite DE Grund", serif;
-  color: #252525;
+  color: #3e0f00;
 }
 
 .brand-title {
@@ -123,7 +141,8 @@ body {
 
 .navigation-menu {
   background-color: #e97451;
-  height: 60px;
+  border-radius: 10px;
+  height: 70px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -143,13 +162,16 @@ body {
 }
 
 /* TITLE: NAVIGATION MENU LINKS */
-.nav-menu-link {
-  display: flex;
-  gap: 1px;
-}
 /*
 *Links (LVHA -link, visited, hover, active)
 */
+
+.nav-menu-link {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
 .nav-menu-link:link,
 .nav-menu-link:visited {
   color: #ffffff;
@@ -162,6 +184,62 @@ body {
 .nav-menu-link:active {
   color: #623021;
   font-weight: 600;
+}
+
+.home-icon,
+.menu-icon,
+.adopt-pet-icon,
+.about-us-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.home-icon {
+  background-image: url("img/icons/home.svg");
+}
+
+.menu-icon {
+  background-image: url(img/icons/menu.svg);
+}
+
+.adopt-pet-icon {
+  background-image: url(img/icons/adopt.svg);
+}
+
+.about-us-icon {
+  background-image: url(img/icons/about.svg);
+}
+
+.nav-menu-link:hover .home-icon,
+.nav-menu-link:active .home-icon {
+  background-image: url("img/icons/home-hover.svg");
+}
+
+.nav-menu-link:hover .adopt-pet-icon,
+.nav-menu-link:active .adopt-pet-icon {
+  background-image: url("img/icons/adopt-hover.svg");
+}
+
+.nav-menu-link:hover .menu-icon,
+.nav-menu-link:active .menu-icon {
+  background-image: url("img/icons/menu-hover.svg");
+}
+
+.nav-menu-link:hover .about-us-icon,
+.nav-menu-link:active .about-us-icon {
+  background-image: url(img/icons/about-hover.svg);
+}
+
+/* TITLE: PARAGRAPH ICONS */
+.paragraph-icons-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.paragraph-icons {
+  height: 24px;
+  margin-bottom: 5px;
 }
 
 /* TITLE: CAFE RULES */
@@ -180,20 +258,40 @@ cite {
 }
 
 /* TITLE: PET ADOPTION FORM */
-.adoption-form-paragraph {
+/* .adoption-form-paragraph {
   text-align: center;
-}
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+} */
 
 .pet-adoption-form {
-  border: 3px solid #623021;
   background: #f2d2bd;
+  border: 3px solid #623021;
+  border-radius: 10px;
   width: 600px;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 .adoption-form-header {
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px 0;
+  background-color: #e97451;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.brand-logo-form {
+  height: 50px;
+}
+
+.form-header-title {
+  font-size: 30px;
+  font-weight: 600;
   text-align: center;
-  margin: 20px 0;
 }
 
 .form-layout {
@@ -218,6 +316,7 @@ cite {
   background: #f2d2bd;
   border: none;
   border: 3px solid #e97451;
+  border-radius: 5px;
   margin-left: 5px;
 }
 
@@ -241,6 +340,8 @@ cite {
   background: #e97451;
   border: none;
   border-top: 3px solid #623021;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
 
 .form-submit-button:hover {
@@ -249,23 +350,23 @@ cite {
 }
 
 /* TITLE: PETS STATS PANEL */
-table,
 th,
 td {
-  font-size: 12px;
-  font-weight: 600;
-  border: 1px solid #623021;
-  border-collapse: collapse;
-  background-color: #f2d2bd;
+  border-top: 2px solid #623021;
+}
+
+tr td:first-child {
+  border-right: 2px solid #623021;
 }
 
 table {
-  width: 300px;
   text-align: center;
-  margin: 20px 0;
+  border-collapse: collapse;
+  width: 300px;
+  /* margin: 20px 0; */
 }
 
-caption {
+table caption {
   font-size: 16px;
   font-weight: 800;
 }
@@ -277,36 +378,61 @@ th {
   background-color: #e97451;
 }
 
+td {
+  font-size: 12px;
+  font-weight: 600;
+  height: 25px;
+  background-color: #f2d2bd;
+}
+
 .pet-imgs {
   width: 100px;
 }
 
+/* TITLE: PET STATS PANEL WRAPPER */
 .pet-stats-panel {
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 20px;
+  margin-right: -20px;
+  top: 0;
+}
+
+aside {
+  height: 100vh;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+}
+
+/* TITLE: TAGLINE */
+.new-pet {
   position: relative;
 }
 
 .tag-line {
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 5px;
+
   color: #ffffff;
   background-color: #ffa200;
+  border-radius: 2px;
+
+  height: 25px;
+  width: 70px;
   padding: 0 10px;
-
   position: absolute;
-  right: -15px;
-  top: 120px;
-}
-
-.tag-line::first-letter {
-  padding-left: 0;
+  right: 0;
+  top: -10px;
 }
 
 /* TITLE: FOOTER */
 .footer {
   font-weight: 600;
   background-color: #e97451;
+  border-radius: 10px;
   height: 40px;
   width: 100%;
   display: flex;
@@ -393,4 +519,8 @@ p {
   position: fixed;
   right: 60px;
   bottom: 50px;
+}
+
+.arrow-up-icon {
+  height: 50px;
 }

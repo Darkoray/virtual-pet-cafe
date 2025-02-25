@@ -24,42 +24,41 @@
         </div>
       </div>
 
-      <!-- <div class="header-nav-menu"> -->
       <nav class="header-nav">
-        <a href="#social-medias" class="nav-menu-link">
-          <img
-            src="img/icons/home.svg"
-            alt="home-icon"
-            class="nav-menu-icons"
-          />
+        <a href="#" class="nav-menu-link home-link">
+          <div class="home-icon"></div>
           Home</a
         >
-        <!-- </div> -->
-        <a href="#" class="nav-menu-link">
-          <img
-            src="img/icons/menu.svg"
-            alt="menu-icon"
-            class="nav-menu-icons"
-          />Café Menu</a
+
+        <a href="#" class="nav-menu-link"
+          ><div class="menu-icon"></div>
+          Café Menu</a
         >
-        <a href="#adoption-form-paragraph" class="nav-menu-link"
-          ><img
-            src="img/icons/adopt.svg"
-            alt="adopt-a-pet-icon"
-            class="nav-menu-icons"
-          />Adopt a Pet</a
+        <a href="#pet-adoption-form" class="nav-menu-link">
+          <div class="adopt-pet-icon"></div>
+          Adopt a Pet</a
         >
         <!-- <a href="#" class="nav-menu-link">🐾Playroom</a> -->
-        <a href="#" class="nav-menu-link">
-          <img src="img/icons/about.svg" alt="about-icon" />About Us</a
+        <a href="#footer" class="nav-menu-link"
+          ><div class="about-us-icon"></div>
+          About Us</a
         >
       </nav>
     </header>
 
     <div class="main-container">
       <article>
+        <!-- TITLE: WELCOME -->
         <section class="welcome-msg">
-          <h2>🐾Welcome to Virtual Pet Café!</h2>
+          <div class="paragraph-icons-container">
+            <img
+              src="img/icons/paw.svg"
+              alt="paw-icon"
+              class="paragraph-icons"
+            />
+            <h2>Welcome to Virtual Pet Café!</h2>
+          </div>
+
           <p>
             Welcome to the coziest café for virtual pets! Adopt a pet and
             enjoy feeding them tdeats, playing games, and reading fun pet
@@ -68,8 +67,16 @@
           </p>
         </section>
 
+        <!-- TITLE: CARING-VIRTUAL-PETS -->
         <section class="caring-virtual-pets">
-          <h2>📖How to Care for Virtual Pets</h2>
+          <div class="paragraph-icons-container">
+            <img
+              src="img/icons/book.svg"
+              alt="book-icon"
+              class="paragraph-icons"
+            />
+            <h2>How to Care for Virtual Pets</h2>
+          </div>
           <p>
             Just like real pets, virtual pets need care too! Keep their
             happiness and hunger meters balanced. Feeding too much makes
@@ -79,10 +86,24 @@
 
         <!-- TITLE: CAFE RULES -->
         <section class="cafe-rules">
-          <h2>💡Virtual Café Rules</h2>
-
+          <div class="paragraph-icons-container">
+            <img
+              src="img/icons/bulb.svg"
+              alt="bulb-icon"
+              class="paragraph-icons"
+            />
+            <h2>Virtual Café Rules</h2>
+          </div>
           <div class="basic-rules">
-            <h3>📜Basic Rules:</h3>
+            <div class="paragraph-icons-container">
+              <img
+                src="img/icons/rules.svg"
+                alt="rules-icon"
+                class="paragraph-icons"
+              />
+              <h3>Basic Rules:</h3>
+            </div>
+
             <ul class="list-margin-fix">
               <li>Virtual pets only! No real fur babies allowed.</li>
               <li>
@@ -95,7 +116,15 @@
           </div>
 
           <div class="cafe-using-rules">
-            <h3>📜How to Use This Café:</h3>
+            <div class="paragraph-icons-container">
+              <img
+                src="img/icons/rules.svg"
+                alt="rules-icon"
+                class="paragraph-icons"
+              />
+              <h3>How to Use This Café:</h3>
+            </div>
+
             <ol class="list-margin-fix">
               <li>Pick a virtual pet.</li>
               <li>Feed them tdeats & play games.</li>
@@ -106,7 +135,15 @@
 
         <!-- TITLE: FUN ANIMAL FACTS -->
         <section class="fun-facts">
-          <h2>📚Fun Pet Facts</h2>
+          <div class="paragraph-icons-container">
+            <img
+              src="img/icons/books.svg"
+              alt="books-icon"
+              class="paragraph-icons"
+            />
+            <h2>Fun Pet Facts</h2>
+          </div>
+
           <div class="pet-facts">
             <div class="pet-fact">
               <h3>Did you know?</h3>
@@ -136,462 +173,478 @@
         </section>
 
         <!-- TITLE: PET ADOPTION FORM -->
-        <section class="pet-adoption">
-          <h3 id="adoption-form-paragraph" class="adoption-form-paragraph">
-            Want to adopt a pet🐶? Fill out the form below!
-          </h3>
-          <div class="pet-adoption-form">
-            <h2 class="adoption-form-header">📝 Adoption Form</h2>
-            <form>
-              <div class="form-layout">
-                <div class="form-label-input">
-                  <label for="customer-name" class="form-label"
-                    >Full Name:</label
-                  >
+        <div class="pet-adoption-form" id="pet-adoption-form">
+          <!-- <p id="adoption-form-paragraph" class="adoption-form-paragraph">
+            Want to adopt a pet? Fill out this form!
+          </p> -->
+          <div class="adoption-form-header">
+            <img
+              src="img/logo.png"
+              alt="brand-logo"
+              class="brand-logo-form"
+            />
+            <p class="form-header-title">Adoption Form</p>
+          </div>
+          <form>
+            <div class="form-layout">
+              <div class="form-label-input">
+                <label for="customer-name" class="form-label"
+                  >Full Name:</label
+                >
+                <input
+                  type="text"
+                  id="customer-name"
+                  class="form-input-box"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <div class="form-label-input">
+                <label for="customer-email" class="form-label"
+                  >Email Address:</label
+                >
+                <input
+                  type="email"
+                  id="customer-email"
+                  class="form-input-box"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="form-label-input">
+                <label for="customer-phone" class="form-label"
+                  >Phone Number:</label
+                >
+                <input
+                  type="tel"
+                  id="customer-phone"
+                  class="form-input-box"
+                  placeholder="Enter your phone number"
+                  required
+                />
+              </div>
+
+              <div class="form-label-input">
+                <label for="customer-age" class="form-label"
+                  >Your Age:</label
+                >
+                <input
+                  type="number"
+                  id="customer-age"
+                  class="form-input-box"
+                  placeholder="Enter your age"
+                  min="18"
+                  required
+                />
+              </div>
+
+              <div class="form-label-input">
+                <label for="customer-address" class="form-label"
+                  >Home Address:</label
+                >
+                <textarea
+                  id="customer-address"
+                  class="form-input-box"
+                  placeholder="Enter your full address"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-label-input">
+                <label for="customer-pet" class="form-label"
+                  >Choose Your Pet:</label
+                >
+                <select
+                  name="customer-pet"
+                  id="customer-pet"
+                  class="form-input-box customer-pet"
+                  required
+                >
+                  <option class="pet-options">Mocha the Cat</option>
+                  <option>Espresso the Dog</option>
+                  <option>Choco the Bunny</option>
+                </select>
+              </div>
+
+              <div class="form-label-input">
+                <label for="customer-pet-name" class="form-label"
+                  >Pet Name:</label
+                >
+                <input
+                  type="text"
+                  id="customer-pet-name"
+                  class="form-input-box"
+                  placeholder="Give your pet a name"
+                  required
+                />
+              </div>
+
+              <div class="form-label-input">
+                <label for="pet-gender" class="form-label"
+                  >Preferred Pet Gender:</label
+                >
+
+                <div class="pet-gender-options">
                   <input
-                    type="text"
-                    id="customer-name"
-                    class="form-input-box"
-                    placeholder="Enter your name"
+                    type="radio"
+                    id="pet-gender-any"
+                    name="form-checkbox"
+                    value="any"
                     required
                   />
+                  <label for="pet-gender-any" class="form-label">
+                    Any
+                  </label>
                 </div>
 
-                <div class="form-label-input">
-                  <label for="customer-email" class="form-label"
-                    >Email Address:</label
-                  >
+                <div class="pet-gender-options">
                   <input
-                    type="email"
-                    id="customer-email"
-                    class="form-input-box"
-                    placeholder="Enter your email"
+                    type="radio"
+                    id="pet-gender-male"
+                    name="form-checkbox"
+                    value="male"
                     required
                   />
+                  <label for="pet-gender-male" class="form-label">
+                    Male
+                  </label>
                 </div>
 
-                <div class="form-label-input">
-                  <label for="customer-phone" class="form-label"
-                    >Phone Number:</label
-                  >
+                <div class="pet-gender-options">
                   <input
-                    type="tel"
-                    id="customer-phone"
-                    class="form-input-box"
-                    placeholder="Enter your phone number"
+                    type="radio"
+                    id="pet-gender-female"
+                    name="form-checkbox"
+                    value="female"
                     required
                   />
-                </div>
-
-                <div class="form-label-input">
-                  <label for="customer-age" class="form-label"
-                    >Your Age:</label
-                  >
-                  <input
-                    type="number"
-                    id="customer-age"
-                    class="form-input-box"
-                    placeholder="Enter your age"
-                    min="18"
-                    required
-                  />
-                </div>
-
-                <div class="form-label-input">
-                  <label for="customer-address" class="form-label"
-                    >Home Address:</label
-                  >
-                  <textarea
-                    id="customer-address"
-                    class="form-input-box"
-                    placeholder="Enter your full address"
-                    required
-                  ></textarea>
-                </div>
-
-                <div class="form-label-input">
-                  <label for="customer-pet" class="form-label"
-                    >Choose Your Pet:</label
-                  >
-                  <select
-                    name="customer-pet"
-                    id="customer-pet"
-                    class="form-input-box customer-pet"
-                    required
-                  >
-                    <option class="pet-options">🐱 Mocha the Cat</option>
-                    <option>🐶 Espresso the Dog</option>
-                    <option>🐰 Choco the Bunny</option>
-                  </select>
-                </div>
-
-                <div class="form-label-input">
-                  <label for="customer-pet-name" class="form-label"
-                    >Pet Name:</label
-                  >
-                  <input
-                    type="text"
-                    id="customer-pet-name"
-                    class="form-input-box"
-                    placeholder="Give your pet a name"
-                    required
-                  />
-                </div>
-
-                <div class="form-label-input">
-                  <label for="pet-gender" class="form-label"
-                    >Preferred Pet Gender:</label
-                  >
-
-                  <div class="pet-gender-options">
-                    <input
-                      type="radio"
-                      id="pet-gender-any"
-                      name="form-checkbox"
-                      value="any"
-                      required
-                    />
-                    <label for="pet-gender-any" class="form-label">
-                      Any
-                    </label>
-                  </div>
-
-                  <div class="pet-gender-options">
-                    <input
-                      type="radio"
-                      id="pet-gender-male"
-                      name="form-checkbox"
-                      value="male"
-                      required
-                    />
-                    <label for="pet-gender-male" class="form-label">
-                      Male
-                    </label>
-                  </div>
-
-                  <div class="pet-gender-options">
-                    <input
-                      type="radio"
-                      id="pet-gender-female"
-                      name="form-checkbox"
-                      value="female"
-                      required
-                    />
-                    <label for="pet-gender-female" class="form-label">
-                      Female
-                    </label>
-                  </div>
-                </div>
-
-                <div class="form-label-input">
-                  <label for="pet-personality" class="form-label"
-                    >Preferred Pet Personality:</label
-                  >
-                  <select id="pet-personality" class="form-input-box">
-                    <option value="playful">Playful</option>
-                    <option value="calm">Calm</option>
-                    <option value="energetic">Energetic</option>
-                    <option value="lazy">Lazy</option>
-                  </select>
-                </div>
-
-                <div class="form-label-input">
-                  <label for="previous-pet" class="form-label"
-                    >Have you adopted before?</label
-                  >
-
-                  <div class="previous-pet">
-                    <input
-                      type="radio"
-                      id="previous-pet-yes"
-                      name="previous-pet"
-                      value="yes"
-                      required
-                    />
-                    <label for="previous-pet-yes" class="form-label"
-                      >Yes</label
-                    >
-                  </div>
-
-                  <div class="previous-pet">
-                    <input
-                      type="radio"
-                      id="previous-pet-no"
-                      name="previous-pet"
-                      value="no"
-                      required
-                    />
-                    <label for="previous-pet-no" class="form-label"
-                      >No</label
-                    >
-                  </div>
-                </div>
-
-                <div class="form-label-input">
-                  <label for="adoption-reason" class="form-label"
-                    >Why do you want to adopt?</label
-                  >
-                  <textarea
-                    id="adoption-reason"
-                    class="form-input-box"
-                    placeholder="Explain why you want to adopt this pet"
-                    required
-                  ></textarea>
-                </div>
-
-                <div class="form-label-input">
-                  <label for="pet-playtime" class="form-label"
-                    >How many hours will you play with your pet
-                    daily?</label
-                  >
-                  <input
-                    type="range"
-                    id="playtime"
-                    min="0"
-                    max="4"
-                    step="1"
-                    class="form-input-box"
-                    required
-                  />
-                </div>
-
-                <div class="form-terms">
-                  <label for="terms" class="form-label">
-                    <input
-                      type="checkbox"
-                      id="terms"
-                      class="terms"
-                      required
-                    />
-                    I agree to virtually spoil my pet daily!
+                  <label for="pet-gender-female" class="form-label">
+                    Female
                   </label>
                 </div>
               </div>
-              <button type="submit" class="form-submit-button">
-                Adopt Now!
-              </button>
-            </form>
-          </div>
-        </section>
+
+              <div class="form-label-input">
+                <label for="pet-personality" class="form-label"
+                  >Preferred Pet Personality:</label
+                >
+                <select id="pet-personality" class="form-input-box">
+                  <option value="playful">Playful</option>
+                  <option value="calm">Calm</option>
+                  <option value="energetic">Energetic</option>
+                  <option value="lazy">Lazy</option>
+                </select>
+              </div>
+
+              <div class="form-label-input">
+                <label for="previous-pet" class="form-label"
+                  >Have you adopted before?</label
+                >
+
+                <div class="previous-pet">
+                  <input
+                    type="radio"
+                    id="previous-pet-yes"
+                    name="previous-pet"
+                    value="yes"
+                    required
+                  />
+                  <label for="previous-pet-yes" class="form-label"
+                    >Yes</label
+                  >
+                </div>
+
+                <div class="previous-pet">
+                  <input
+                    type="radio"
+                    id="previous-pet-no"
+                    name="previous-pet"
+                    value="no"
+                    required
+                  />
+                  <label for="previous-pet-no" class="form-label"
+                    >No</label
+                  >
+                </div>
+              </div>
+
+              <div class="form-label-input">
+                <label for="adoption-reason" class="form-label"
+                  >Why do you want to adopt?</label
+                >
+                <textarea
+                  id="adoption-reason"
+                  class="form-input-box"
+                  placeholder="Explain why you want to adopt this pet"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-label-input">
+                <label for="pet-playtime" class="form-label"
+                  >How many hours will you play with your pet daily?</label
+                >
+                <input
+                  type="range"
+                  id="playtime"
+                  min="0"
+                  max="4"
+                  step="1"
+                  class="form-input-box"
+                  required
+                />
+              </div>
+
+              <div class="form-terms">
+                <label for="terms" class="form-label">
+                  <input
+                    type="checkbox"
+                    id="terms"
+                    class="terms"
+                    required
+                  />
+                  I agree to virtually spoil my pet daily!
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="form-submit-button">
+              Adopt Now!
+            </button>
+          </form>
+        </div>
       </article>
 
       <aside>
         <!-- TITLE: PET STATS PANEL -->
-        <section class="pet-stats-panel">
-          <table>
-            <thead>
-              <caption>
-                <img
-                  src="img/pets/cat.png"
-                  alt="mocha-the-cat"
-                  class="pet-imgs"
-                />
-              </caption>
-              <caption>
-                Mocha the Cat
-              </caption>
-              <th colspan="2">
-                About
-                <p class="tag-line">New</p>
-              </th>
-            </thead>
+        <div class="pet-stats-panel">
+          <div class="new-pet">
+            <section>
+              <table>
+                <thead>
+                  <tr>
+                    <caption>
+                      <img
+                        src="img/pets/cat.png"
+                        alt="mocha-the-cat"
+                        class="pet-imgs"
+                      />
+                    </caption>
+                    <caption>
+                      Mocha the Cat
+                    </caption>
+                    <th colspan="2">About</th>
+                    <p class="tag-line">New</p>
+                  </tr>
+                </thead>
 
-            <tbody>
-              <tr>
-                <td>Gender</td>
-                <td>Female</td>
-              </tr>
+                <tbody>
+                  <tr>
+                    <td>Gender</td>
+                    <td>Female</td>
+                  </tr>
 
-              <tr>
-                <td>Breed</td>
-                <td>Siamese</td>
-              </tr>
+                  <tr>
+                    <td>Breed</td>
+                    <td>Siamese</td>
+                  </tr>
 
-              <tr>
-                <td>Age</td>
-                <td>2 years</td>
-              </tr>
+                  <tr>
+                    <td>Age</td>
+                    <td>2 years</td>
+                  </tr>
 
-              <tr>
-                <td>Personality</td>
-                <td>Grumpy, Loving</td>
-              </tr>
+                  <tr>
+                    <td>Personality</td>
+                    <td>Grumpy, Loving</td>
+                  </tr>
 
-              <tr>
-                <td>Favorite Snack</td>
-                <td>Tuna, Cupcakes</td>
-              </tr>
-            </tbody>
-            <thead>
-              <th colspan="2">Stats</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Hunger</td>
-                <td><progress value="80" max="100"></progress></td>
-              </tr>
+                  <tr>
+                    <td>Favorite Snack</td>
+                    <td>Tuna, Cupcakes</td>
+                  </tr>
 
-              <tr>
-                <td>Happiness</td>
-                <td><progress value="50" max="100"></progress></td>
-              </tr>
+                  <tr>
+                    <th colspan="2">Stats</th>
+                  </tr>
 
-              <tr>
-                <td>Energy</td>
-                <td><progress value="70" max="100"></progress></td>
-              </tr>
+                  <tr>
+                    <td>Hunger</td>
+                    <td><progress value="80" max="100"></progress></td>
+                  </tr>
 
-              <tr>
-                <td>Health</td>
-                <td><progress value="90" max="100"></progress></td>
-              </tr>
-            </tbody>
-          </table>
+                  <tr>
+                    <td>Happiness</td>
+                    <td><progress value="50" max="100"></progress></td>
+                  </tr>
 
-          <table>
-            <thead>
-              <caption>
-                <img
-                  src="img/pets/dog.png"
-                  alt="espresso-the-dog"
-                  class="pet-imgs"
-                />
-              </caption>
-              <caption>
-                Espresso the Dog
-              </caption>
-              <th colspan="2">About</th>
-            </thead>
+                  <tr>
+                    <td>Energy</td>
+                    <td><progress value="70" max="100"></progress></td>
+                  </tr>
 
-            <tbody>
-              <tr>
-                <td>Gender</td>
-                <td>Male</td>
-              </tr>
+                  <tr>
+                    <td>Health</td>
+                    <td><progress value="90" max="100"></progress></td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </div>
 
-              <tr>
-                <td>Breed</td>
-                <td>Beagle</td>
-              </tr>
+          <section>
+            <table>
+              <thead>
+                <caption>
+                  <img
+                    src="img/pets/dog.png"
+                    alt="espresso-the-dog"
+                    class="pet-imgs"
+                  />
+                </caption>
+                <caption>
+                  Espresso the Dog
+                </caption>
+                <th colspan="2">About</th>
+              </thead>
 
-              <tr>
-                <td>Age</td>
-                <td>3 years</td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td>Gender</td>
+                  <td>Male</td>
+                </tr>
 
-              <tr>
-                <td>Personality</td>
-                <td>Playful, Energetic, Loyal</td>
-              </tr>
+                <tr>
+                  <td>Breed</td>
+                  <td>Beagle</td>
+                </tr>
 
-              <tr>
-                <td>Favorite Snack</td>
-                <td>Chicken, Jerky</td>
-              </tr>
-            </tbody>
-            <thead>
-              <th colspan="2">Stats</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Hunger</td>
-                <td><progress value="60" max="100"></progress></td>
-              </tr>
+                <tr>
+                  <td>Age</td>
+                  <td>3 years</td>
+                </tr>
 
-              <tr>
-                <td>Happiness</td>
-                <td><progress value="90" max="100"></progress></td>
-              </tr>
+                <tr>
+                  <td>Personality</td>
+                  <td>Playful, Energetic, Loyal</td>
+                </tr>
 
-              <tr>
-                <td>Energy</td>
-                <td><progress value="80" max="100"></progress></td>
-              </tr>
+                <tr>
+                  <td>Favorite Snack</td>
+                  <td>Chicken, Jerky</td>
+                </tr>
 
-              <tr>
-                <td>Health</td>
-                <td><progress value="90" max="100"></progress></td>
-              </tr>
-            </tbody>
-          </table>
+                <tr>
+                  <th colspan="2">Stats</th>
+                </tr>
 
-          <table>
-            <thead>
-              <caption>
-                <img
-                  src="img/pets/rabbit.png"
-                  alt="choco-the-bunny"
-                  class="pet-imgs"
-                />
-              </caption>
-              <caption>
-                Choco the Bunny
-              </caption>
-              <th colspan="2">About</th>
-            </thead>
+                <tr>
+                  <td>Hunger</td>
+                  <td><progress value="60" max="100"></progress></td>
+                </tr>
 
-            <tbody>
-              <tr>
-                <td>Gender</td>
-                <td>Male</td>
-              </tr>
+                <tr>
+                  <td>Happiness</td>
+                  <td><progress value="90" max="100"></progress></td>
+                </tr>
 
-              <tr>
-                <td>Breed</td>
-                <td>Mini Lop</td>
-              </tr>
+                <tr>
+                  <td>Energy</td>
+                  <td><progress value="80" max="100"></progress></td>
+                </tr>
 
-              <tr>
-                <td>Age</td>
-                <td>1.5 years</td>
-              </tr>
+                <tr>
+                  <td>Health</td>
+                  <td><progress value="90" max="100"></progress></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
 
-              <tr>
-                <td>Personality</td>
-                <td>Gentle, Curious, Cuddly</td>
-              </tr>
+          <section>
+            <table>
+              <thead>
+                <caption>
+                  <img
+                    src="img/pets/rabbit.png"
+                    alt="choco-the-bunny"
+                    class="pet-imgs"
+                  />
+                </caption>
+                <caption>
+                  Choco the Bunny
+                </caption>
+                <th colspan="2">About</th>
+              </thead>
 
-              <tr>
-                <td>Favorite Snack</td>
-                <td>Carrot Muffins, Strawberries</td>
-              </tr>
-            </tbody>
-            <thead>
-              <th colspan="2">Stats</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Hunger</td>
-                <td><progress value="70" max="100"></progress></td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td>Gender</td>
+                  <td>Male</td>
+                </tr>
 
-              <tr>
-                <td>Happiness</td>
-                <td><progress value="80" max="100"></progress></td>
-              </tr>
+                <tr>
+                  <td>Breed</td>
+                  <td>Mini Lop</td>
+                </tr>
 
-              <tr>
-                <td>Energy</td>
-                <td><progress value="50" max="100"></progress></td>
-              </tr>
+                <tr>
+                  <td>Age</td>
+                  <td>1.5 years</td>
+                </tr>
 
-              <tr>
-                <td>Health</td>
-                <td><progress value="80" max="100"></progress></td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+                <tr>
+                  <td>Personality</td>
+                  <td>Gentle, Curious, Cuddly</td>
+                </tr>
+
+                <tr>
+                  <td>Favorite Snack</td>
+                  <td>Carrot Muffins, Strawberries</td>
+                </tr>
+
+                <tr>
+                  <th colspan="2">Stats</th>
+                </tr>
+
+                <tr>
+                  <td>Hunger</td>
+                  <td><progress value="70" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                  <td>Happiness</td>
+                  <td><progress value="80" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                  <td>Energy</td>
+                  <td><progress value="50" max="100"></progress></td>
+                </tr>
+
+                <tr>
+                  <td>Health</td>
+                  <td><progress value="80" max="100"></progress></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
       </aside>
 
       <div class="arrow-up">
         <a href="#navigation-menu">
-          <img src="img/icons/arrow up.svg" alt="arrow-up" />
+          <img
+            src="img/icons/arrow up.png"
+            alt="arrow-up"
+            class="arrow-up-icon"
+          />
         </a>
       </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <!-- TITLE: FOOTER LINKS -->
       <div class="footer-links">
         <div class="social-medias" id="social-medias">
